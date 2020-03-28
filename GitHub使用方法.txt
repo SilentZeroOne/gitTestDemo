@@ -1,0 +1,16 @@
+git操作具体步骤：
+1.cd 路径 进入当前目录
+2.配置git基本操作 git config --global user.name "名字 " git config --global user.email "邮箱"
+3.git init 本地初始化
+4.工作区=>暂存区  git add 文件名 /git add * 提交所有文件  git commit -m "提交信息描述"
+5.查看当前工作区状态  git status
+6.从暂存区恢复文件到工作区  git restore 文件名
+7.查看工作区和暂存区的区别 git diff
+8.clear 清空屏幕
+9.git log 查看已经提交到暂存区的历史版本
+10.恢复文件到指定版本  git reset --hard HEAD^ 上个版本  git reset --hard 版本号
+11.生成ssh密钥 ssh-keygen -t rsa -C "github邮箱地址"  位置在C：// user/username/.ssh/***.pub
+12.github账户配置密钥    点击头像 setting =>SSH and GPG keys =>new keys 
+13.暂存区=>仓库区  git remote add origin 仓库地址   git push -u origin master(第一次提交) 往后使用 git push 即可
+14.git clone 从远程仓库克隆项目到本地
+15.git pull 更新远程仓库项目代码到本地
